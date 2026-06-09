@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="756.0" prefWidth="1344.0" style="-fx-background-color: #fff9f0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.partb.NutritionController">
+                      <Label fx:id="incorrectValue" layoutX="705.0" layoutY="3.0" prefHeight="43.0" prefWidth="561.0" textFill="#e41616">
+                          <font>
+                              <Font name="Berlin Sans FB" size="17.0" />
+                          </font>
+   </Label>
+                    <AnchorPane layoutX="9.0" layoutY="363.0" maxWidth="-Infinity" prefHeight="383.0" prefWidth="1326.0" style="-fx-border-color: #3C583E; -fx-border-width: 1.5px;">
+      <children>
+                            <Label fx:id="summaryWarning" alignment="CENTER" layoutX="261.0" layoutY="53.0" prefHeight="29.0" prefWidth="367.0" textFill="#e41616">
+                                <font>
+                                    <Font name="Rockwell" size="12.0" />
+                                </font>
+                            </Label>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="3.0" prefHeight="58.0" prefWidth="318.0" text="Nutrition Summary" textFill="#3c583e">
+                            <font>
+                                <Font name="Rockwell Bold" size="30.0" />
+                            </font>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </Label>
+                            <Label layoutX="693.0" layoutY="34.0" prefHeight="50.0" prefWidth="166.0" text="Summary History" textFill="#3c583e" underline="true">
+                                <font>
+                                    <Font name="Rockwell Bold" size="18.0" />
+                                </font>
+                            </Label>
+      </children>
+                    </AnchorPane>
+                  <Label alignment="CENTER" layoutX="35.0" layoutY="70.0" prefHeight="58.0" prefWidth="241.0" text="Diet Tracking" textFill="#3c583e">
+                      <font>
+                          <Font name="System Bold" size="30.0" />
+                      </font>
+                      <opaqueInsets>
+                          <Insets />
+                      </opaqueInsets>
+                  </Label>
+                    <Separator maxWidth="-Infinity" prefWidth="1332.0" />
+                    <Label alignment="CENTER" layoutX="38.0" layoutY="298.0" prefHeight="50.0" prefWidth="194.0" style="-fx-padding: 10; -fx-border-color: #3c583e;" text="Common Food Item" textFill="#3c583e" underline="true">
+                        <font>
+                            <Font name="System Bold" size="18.0" />
+                        </font>
+                    </Label>
+                      <Label fx:id="labelWarning" alignment="CENTER" layoutX="880.0" layoutY="404.0" prefHeight="38.0" prefWidth="427.0" textFill="#e41616">
+                          <font>
+                              <Font name="Rockwell" size="15.0" />
+                          </font>
+                      </Label>
+                      <DatePicker fx:id="summaryDate" layoutX="309.0" layoutY="462.0" prefHeight="14.0" prefWidth="232.0" promptText="Select Today Date" stylesheets="@styles.css" />
+                      <Button fx:id="summaryButton" layoutX="551.0" layoutY="463.0" mnemonicParsing="false" onAction="#showSummary" prefHeight="3.0" prefWidth="66.0" style="-fx-background-color: transparent; -fx-border-color: #3C583E; -fx-border-width: 1.5;" text="Go" textFill="#3c583e">
+                          <font>
+                              <Font name="System Bold" size="15.0" />
+                          </font>
+                      </Button>
+                      <PieChart fx:id="pieChart" layoutX="29.0" layoutY="467.0" prefHeight="264.0" prefWidth="260.0" style="-fx-border-color: grey;" />
+                      <VBox fx:id="historyBox" layoutX="685.0" layoutY="511.0" prefHeight="218.0" prefWidth="638.0" style="-fx-border-color: grey;">
+      <children>
+                              <ListView fx:id="historyList" prefHeight="218.0" prefWidth="629.0" />
+      </children>
+   </VBox>
+                      <Label layoutX="263.0" layoutY="311.0" prefHeight="30.0" prefWidth="90.0" text="Breakfast :" textFill="#3c583e">
+                          <font>
+                              <Font name="Rockwell" size="15.0" />
+                          </font>
+                      </Label>
+                      <ComboBox fx:id="breakfast" layoutX="368.0" layoutY="311.0" prefHeight="30.0" prefWidth="160.0">
+                          <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                  <String fx:value="Oatmeal with blueberries and almonds, Calories: 300, Protein: 10g, Fats: 12g, Carbohydrates: 40g, Fiber: 5g" />
+                                  <String fx:value="Greek yogurt with honey and granola, Calories: 250, Protein: 15g, Fats: 6g, Carbohydrates: 30g, Sugar: 8g" />
+                                  <String fx:value="Scrambled eggs with spinach and whole-wheat toast, Calories: 280, Protein: 18g, Fats: 14g, Carbohydrates: 22g, Fiber: 3g" />
+                                  <String fx:value="Smoothie with banana, spinach, and protein powder, Calories: 220, Protein: 20g, Fats: 2g, Carbohydrates: 35g, Fiber: 4g" />
+                                  <String fx:value="Avocado toast with poached egg, Calories: 300, Protein: 12g, Fats: 20g, Carbohydrates: 28g, Fiber: 7g" />
+                                  <String fx:value="Cottage cheese with pineapple, Calories: 180, Protein: 14g, Fats: 4g, Carbohydrates: 20g, Sugar: 10g" />
+                              </FXCollections>
+                          </items>
+                      </ComboBox>
+
+                      <Label layoutX="550.0" layoutY="311.0" prefHeight="30.0" prefWidth="66.0" text="Lunch :" textFill="#3c583e">
+                          <font>
+                              <Font name="Rockwell" size="15.0" />
+                          </font>
+                      </Label>
+                      <ComboBox fx:id="lunch" layoutX="630.0" layoutY="311.0" prefHeight="30.0" prefWidth="160.0">
+                          <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                  <String fx:value="Grilled chicken salad with mixed greens and vinaigrette, Calories: 350, Protein: 30g, Fats: 12g, Carbohydrates: 20g, Fiber: 5g" />
+                                  <String fx:value="Quinoa and black bean bowl with avocado, Calories: 400, Protein: 15g, Fats: 18g, Carbohydrates: 50g, Fiber: 10g" />
+                                  <String fx:value="Tuna wrap with spinach and hummus, Calories: 380, Protein: 28g, Fats: 15g, Carbohydrates: 40g, Fiber: 6g" />
+                                  <String fx:value="Turkey sandwich on whole wheat, Calories: 350, Protein: 25g, Fats: 10g, Carbohydrates: 35g, Fiber: 4g" />
+                                  <String fx:value="Chickpea and vegetable stir-fry, Calories: 420, Protein: 18g, Fats: 12g, Carbohydrates: 55g, Fiber: 8g" />
+                                  <String fx:value="Lentil soup with whole-grain crackers, Calories: 300, Protein: 16g, Fats: 5g, Carbohydrates: 45g, Fiber: 10g" />
+                              </FXCollections>
+                          </items>
+                      </ComboBox>
+
+                      <Label layoutX="834.0" layoutY="311.0" prefHeight="30.0" prefWidth="66.0" text="Dinner :" textFill="#3c583e">
+                          <font>
+                              <Font name="Rockwell" size="15.0" />
+                          </font>
+                      </Label>
+                      <ComboBox fx:id="dinner" layoutX="916.0" layoutY="311.0" prefHeight="30.0" prefWidth="160.0">
+                          <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                  <String fx:value="Baked salmon with steamed broccoli and brown rice, Calories: 450, Protein: 35g, Fats: 15g, Carbohydrates: 40g, Fiber: 5g" />
+                                  <String fx:value="Stir-fried tofu with mixed vegetables and whole-wheat noodles, Calories: 400, Protein: 20g, Fats: 10g, Carbohydrates: 45g, Fiber: 7g" />
+                                  <String fx:value="Grilled shrimp with quinoa and roasted vegetables, Calories: 430, Protein: 32g, Fats: 14g, Carbohydrates: 45g, Fiber: 8g" />
+                                  <String fx:value="Baked chicken breast with sweet potato and green beans, Calories: 420, Protein: 40g, Fats: 8g, Carbohydrates: 40g, Fiber: 6g" />
+                                  <String fx:value="Spaghetti with marinara sauce and turkey meatballs, Calories: 500, Protein: 30g, Fats: 16g, Carbohydrates: 60g, Fiber: 8g" />
+                                  <String fx:value="Stuffed bell peppers with ground beef and brown rice, Calories: 380, Protein: 28g, Fats: 12g, Carbohydrates: 35g, Fiber: 5g" />
+                              </FXCollections>
+                          </items>
+                      </ComboBox>
+                      <Label layoutX="1099.0" layoutY="311.0" prefHeight="30.0" prefWidth="55.0" text="Snack :" textFill="#3c583e">
+                          <font>
+                              <Font name="Rockwell" size="15.0" />
+                          </font>
+                      </Label>
+                      <ComboBox fx:id="snack" layoutX="1164.0" layoutY="311.0" prefHeight="30.0" prefWidth="160.0">
+                          <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                  <String fx:value="Apple with peanut butter, Calories: 200, Protein: 4g, Fats: 9g, Carbohydrates: 25g, Fiber: 4g" />
+                                  <String fx:value="Protein smoothie with banana and spinach, Calories: 180, Protein: 15g, Fats: 2g, Carbohydrates: 30g, Fiber: 5g" />
+                                  <String fx:value="Mixed nuts (almonds, walnuts, cashews), Calories: 220, Protein: 6g, Fats: 18g, Carbohydrates: 8g, Fiber: 3g" />
+                                  <String fx:value="Cottage cheese with cucumber slices, Calories: 120, Protein: 10g, Fats: 4g, Carbohydrates: 6g, Fiber: 1g" />
+                                  <String fx:value="Rice cakes with almond butter, Calories: 150, Protein: 4g, Fats: 7g, Carbohydrates: 18g, Fiber: 2g" />
+                                  <String fx:value="Hard-boiled eggs, Calories: 140, Protein: 12g, Fats: 9g, Carbohydrates: 1g, Fiber: 0g" />
+                              </FXCollections>
+                          </items>
+                      </ComboBox>
+                        <Button fx:id="filterButton" layoutX="1250.0" layoutY="471.0" mnemonicParsing="false" onAction="#filterButton" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: transparent; -fx-border-color: #3C583E; -fx-border-width: 1.5;" text="Filter" textFill="#3c583e">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <Label fx:id="fromDate" layoutX="692.0" layoutY="460.0" prefHeight="51.0" prefWidth="42.0" text="From">
+                            <font>
+                                <Font name="Rockwell" size="15.0" />
+                            </font>
+                        </Label>
+                        <DatePicker fx:id="dateFilter1" layoutX="737.0" layoutY="467.0" prefHeight="26.0" prefWidth="232.0" stylesheets="@styles.css" />
+                        <DatePicker fx:id="dateFilter2" layoutX="1004.0" layoutY="467.0" prefHeight="26.0" prefWidth="232.0" stylesheets="@styles.css" />
+                        <Label fx:id="toDate" layoutX="977.0" layoutY="477.0" text="To">
+                            <font>
+                                <Font name="Rockwell" size="15.0" />
+                            </font>
+                        </Label>
+                      <Label alignment="CENTER" layoutX="67.0" layoutY="428.0" prefHeight="26.0" prefWidth="184.0" text="Daily Summary" textAlignment="CENTER" textFill="#3c583e" underline="true">
+                          <font>
+                              <Font name="Rockwell Bold" size="18.0" />
+                          </font>
+                      </Label>
+   <ScrollPane layoutX="300.0" layoutY="513.0" prefHeight="218.0" prefWidth="318.0">
+      <content>
+                              <VBox fx:id="summary" />
+      </content>
+   </ScrollPane>
+   <Line endX="100.0" layoutX="551.0" layoutY="378.0" startX="100.0" startY="350.0" stroke="#3c583e" />
+                        <Label layoutX="666.0" layoutY="211.0" prefHeight="30.0" prefWidth="127.0" text="Carbohydrates (g) :" textFill="#3c583e">
+                            <font>
+                                <Font name="Rockwell Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="668.0" layoutY="135.0" prefHeight="30.0" prefWidth="118.0" text="Calories (g)            :" textFill="#3c583e" wrapText="true">
+                            <font>
+                                <Font name="Rockwell Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="67.0" layoutY="141.0" prefHeight="26.0" prefWidth="66.0" text="Date :" textFill="#3c583e">
+                            <font>
+                                <Font name="Rockwell Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="67.0" layoutY="211.0" prefHeight="30.0" prefWidth="75.0" text="Meal Time :" textFill="#3c583e">
+                            <font>
+                                <Font name="Rockwell Bold" size="12.0" />
+                            </font>
+                        </Label>
+
+                      <DatePicker fx:id="date" layoutX="123.0" layoutY="135.0" prefHeight="26.0" prefWidth="206.0" stylesheets="@styles.css" />
+                      <ComboBox fx:id="mealTime" layoutX="156.0" layoutY="213.0" prefHeight="26.0" prefWidth="174.0">
+                          <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                  <String fx:value="BreakFast" />
+                                  <String fx:value="Lunch" />
+                                  <String fx:value="Dinner" />
+                                  <String fx:value="Snack" />
+                              </FXCollections>
+                          </items>
+                      </ComboBox>
+                        <Label layoutX="394.0" layoutY="135.0" prefHeight="38.0" prefWidth="75.0" text="Food Item   :" textFill="#3c583e">
+                            <font>
+                                <Font name="Rockwell Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="394.0" layoutY="211.0" prefHeight="30.0" prefWidth="166.0" text="Portion Size :" textFill="#3c583e">
+                            <font>
+                                <Font name="Rockwell Bold" size="12.0" />
+                            </font>
+                        </Label>
+                      <Button fx:id="logMealsButton" layoutX="599.0" layoutY="257.0" mnemonicParsing="false" onAction="#logMeals" prefHeight="18.0" prefWidth="102.0" style="-fx-background-color: #3c583e;" text="Log Meals" textAlignment="CENTER" textFill="WHITE">
+                          <font>
+                              <Font name="System Bold" size="15.0" />
+                          </font>
+                      </Button>
+
+
+                      <TextField fx:id="foodItem" layoutX="474.0" layoutY="141.0" prefHeight="26.0" prefWidth="166.0" />
+                      <Spinner fx:id="portionSize" layoutX="477.0" layoutY="206.0" prefHeight="30.0" prefWidth="127.0" />
+                      <TextField fx:id="calories" layoutX="783.0" layoutY="137.0" prefHeight="18.0" prefWidth="150.0" />
+                      <TextField fx:id="proteins" layoutX="1096.0" layoutY="137.0" prefHeight="18.0" prefWidth="150.0" />
+                      <TextField fx:id="carbohydrates" layoutX="784.0" layoutY="213.0" prefHeight="18.0" prefWidth="150.0" />
+                      <TextField fx:id="fats" layoutX="1099.0" layoutY="213.0" prefHeight="18.0" prefWidth="150.0" />
+   <MenuButton layoutX="51.0" layoutY="24.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="64.0" style="-fx-background-color: transparent;" stylesheets="@styles.css" text="≡" textFill="#3c583e">
+     <items>
+       <MenuItem fx:id="menuHome" mnemonicParsing="false" text="Home" />
+       <MenuItem fx:id="menuExercise" mnemonicParsing="false" text="Log Exercise" />
+         <MenuItem fx:id="menuNutrition" mnemonicParsing="false" text="My Nutrition" />
+         <MenuItem fx:id="menuGoal" mnemonicParsing="false" text="Set Fitness Goal" />
+         <MenuItem fx:id="menuProgress" mnemonicParsing="false" text="Check My Progress" />
+         <MenuItem fx:id="menuProfile" mnemonicParsing="false" text="My Profile" />
+     </items>
+      <font>
+         <Font size="22.0" />
+      </font>
+   </MenuButton>
+   <Label layoutX="966.0" layoutY="211.0" prefHeight="30.0" prefWidth="127.0" text="Fats (g)                     :" textFill="#3c583e">
+      <font>
+         <Font name="Rockwell Bold" size="12.0" />
+      </font>
+   </Label>
+   <Label layoutX="968.0" layoutY="135.0" prefHeight="30.0" prefWidth="118.0" text="Protein (g)               :" textFill="#3c583e" wrapText="true">
+      <font>
+         <Font name="Rockwell Bold" size="12.0" />
+      </font>
+   </Label>
+   <Label layoutX="100.0" layoutY="44.0" text="Menu" textFill="#3c583e">
+      <font>
+         <Font name="Rockwell Bold" size="15.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="1095.0" layoutY="28.0" prefHeight="40.0" prefWidth="161.0" text="SparkFit." textFill="#3c583e">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+   <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="1252.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../logo.png" />
+      </image>
+   </ImageView>
+
+
+
+</AnchorPane>

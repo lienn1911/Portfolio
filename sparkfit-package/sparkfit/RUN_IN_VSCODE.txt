@@ -1,0 +1,14 @@
+SparkFit - VS Code Run Guide
+
+1. Open the sparkfit folder in VS Code.
+2. Install/enable Extension Pack for Java if VS Code asks.
+3. Make sure JDK 22 is installed at:
+   C:\Program Files\Java\jdk-22
+4. Open a new VS Code terminal.
+5. Run:
+   .\run-sparkfit-vscode.cmd
+
+The script sets JAVA_HOME automatically and runs:
+.\mvnw.cmd clean javafx:run
+
+If Maven asks to download dependencies, allow it once while connected to the internet.

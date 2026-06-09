@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="756.0" prefWidth="1344.0" style="-fx-background-color: #FFF9F0; -fx-border-width: 2px; -fx-padding: 5px;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.partb.ViewGoalController">
+    <children>
+        <Label alignment="CENTER" layoutX="464.0" layoutY="166.0" prefHeight="96.0" prefWidth="415.0" text="My Fitness Goal" textAlignment="CENTER" textFill="#3c583e" wrapText="true">
+            <font>
+                <Font name="System Bold" size="40.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutX="55.0" layoutY="279.0" prefHeight="145.0" prefWidth="529.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: #3c583e;">
+            <children>
+                <Label contentDisplay="TOP" layoutX="104.0" layoutY="14.0" text="Daily Calories To Burn" textFill="#3c583e">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="calories" alignment="CENTER" layoutX="214.0" layoutY="72.0" prefHeight="60.0" prefWidth="92.0" text="0" textFill="#00000099">
+                    <font>
+                        <Font size="40.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="55.0" layoutY="460.0" prefHeight="145.0" prefWidth="529.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: #3c583e;">
+            <children>
+                <Label contentDisplay="TOP" layoutX="122.0" layoutY="14.0" text="Target Body Weight" textFill="#3c583e">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="weight" alignment="CENTER" layoutX="218.0" layoutY="69.0" prefHeight="60.0" prefWidth="92.0" text="0" textAlignment="CENTER" textFill="#00000099">
+                    <font>
+                        <Font size="40.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="706.0" layoutY="279.0" prefHeight="145.0" prefWidth="529.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: #3c583e;">
+            <children>
+                <Label contentDisplay="TOP" layoutX="181.0" layoutY="14.0" text="Daily Steps" textFill="#3c583e">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="steps" alignment="CENTER" layoutX="219.0" layoutY="60.0" prefHeight="60.0" prefWidth="92.0" text="0" textFill="#00000099">
+                    <font>
+                        <Font size="40.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="715.0" layoutY="460.0" prefHeight="145.0" prefWidth="529.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: #3c583e;">
+            <children>
+                <Label contentDisplay="TOP" layoutX="180.0" layoutY="14.0" text="Sleep Hours" textFill="#3c583e">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="sleep" alignment="CENTER" layoutX="213.0" layoutY="72.0" prefHeight="60.0" prefWidth="92.0" text="0" textFill="#00000099">
+                    <font>
+                        <Font size="40.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Label layoutX="157.0" layoutY="117.0" text="Deadline to achieve goal:" textFill="#3c583e">
+            <font>
+                <Font name="Rockwell Bold" size="15.0" />
+            </font>
+        </Label>
+      <Label fx:id="deadline" alignment="CENTER" layoutX="78.0" layoutY="166.0" prefHeight="43.0" prefWidth="345.0" text="DD-MM-YYY" textAlignment="CENTER" textFill="#3c583e" wrapText="true">
+         <font>
+            <Font name="Rockwell Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="countdown" alignment="CENTER" layoutX="1011.0" layoutY="150.0" prefHeight="43.0" prefWidth="84.0" text="-" textAlignment="CENTER" textFill="#3c583e" wrapText="true">
+         <font>
+            <Font name="Rockwell Bold" size="36.0" />
+         </font>
+      </Label>
+        <Label layoutX="100.0" layoutY="44.0" text="Menu" textFill="#3c583e">
+            <font>
+                <Font name="Rockwell Bold" size="15.0" />
+            </font>
+        </Label>
+        <MenuButton layoutX="51.0" layoutY="24.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="64.0" style="-fx-background-color: transparent;" stylesheets="@styles.css" text="≡" textFill="#3c583e">
+            <items>
+                <MenuItem fx:id="menuHome" mnemonicParsing="false" text="Home" />
+                <MenuItem fx:id="menuExercise" mnemonicParsing="false" text="Log Your Exercise" />
+            <MenuItem fx:id="menuNutrition" mnemonicParsing="false" text="My Nutrition" />
+            <MenuItem fx:id="menuGoal" mnemonicParsing="false" text="Set Fitness Goal" />
+            <MenuItem fx:id="menuProgress" mnemonicParsing="false" text="Check Your Progress" />
+            <MenuItem fx:id="menuProfile" mnemonicParsing="false" text="My Profile" />
+            </items>
+            <font>
+                <Font size="22.0" />
+            </font>
+        </MenuButton>
+      <JFXButton fx:id="goalAchieved" layoutX="514.0" layoutY="669.0" style="-fx-background-color: #3c583e; -fx-background-radius: 20; -fx-padding: 5 20;" text="I Have Achieved My Goal" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="resetGoal" buttonType="RAISED" layoutX="1142.0" layoutY="671.0" style="-fx-background-color: #3c583e;" text="Reset Goal" textFill="#fff9f0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+        <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="1252.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../logo.png" />
+            </image>
+        </ImageView>
+        <Label alignment="CENTER" layoutX="1095.0" layoutY="28.0" prefHeight="40.0" prefWidth="161.0" text="SparkFit." textAlignment="CENTER" textFill="#3c583e">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+      <Label alignment="CENTER" layoutX="1011.0" layoutY="117.0" text="Countdown" textFill="#3c583e">
+         <font>
+            <Font name="Rockwell Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1035.0" layoutY="214.0" text="days" textFill="#3c583e">
+         <font>
+            <Font name="Rockwell Bold" size="15.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

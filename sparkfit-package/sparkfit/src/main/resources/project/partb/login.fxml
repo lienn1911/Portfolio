@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="loginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.partb.LoginController">
+    <right>
+        <AnchorPane prefHeight="502.0" prefWidth="347.0" style="-fx-background-color: #3c583e;" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="loginUsername" layoutX="48.0" layoutY="249.0" prefHeight="26.0" prefWidth="250.0" promptText="User Name" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #fff9f0; -fx-background-color: transparent;" stylesheets="@textField.css" />
+                <PasswordField fx:id="loginPassword" layoutX="47.0" layoutY="300.0" prefHeight="26.0" prefWidth="253.0" promptText="Password" style="-fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent; -fx-border-color: #fff9f0;" stylesheets="@textField.css" />
+                <Text fill="#fff9f0" layoutX="134.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOG IN">
+                    <font>
+                        <Font name="System Bold" size="23.0" />
+                    </font>
+                </Text>
+                <Label fx:id="loginMessage" alignment="CENTER" layoutX="47.0" layoutY="227.0" prefHeight="18.0" prefWidth="250.0" textAlignment="CENTER" textFill="#fff9f0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <JFXButton fx:id="loginButton" buttonType="RAISED" layoutX="148.0" layoutY="351.0" style="-fx-background-color: #fff9f0;" text="Log In" textFill="#3c583e">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="55.0" fitWidth="43.0" layoutX="152.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../logo.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="loginExit" layoutX="233.0" layoutY="460.0" style="-fx-border-color: #fff9f0;" text="Exit Application" textFill="#fff9f0" />
+            </children>
+        </AnchorPane>
+    </right>
+    <center>
+        <AnchorPane prefHeight="502.0" prefWidth="338.0" style="-fx-background-color: #3c583e;" BorderPane.alignment="CENTER">
+            <children>
+                <JFXToggleButton fx:id="loginToggle" layoutX="87.0" layoutY="389.0" prefHeight="58.0" prefWidth="177.0" text=" " toggleColor="#fff9f0" toggleLineColor="#cfa0a0" unToggleColor="#cfa0a0" unToggleLineColor="#fff9f0" />
+                <Text fill="#fff9f0" layoutX="223.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up" />
+                <Text fill="#fff9f0" layoutX="87.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log In">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Text>
+            <ImageView fitHeight="292.0" fitWidth="207.0" layoutX="76.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../login_signup.png" />
+               </image>
+            </ImageView>
+            <Text fill="#fff9f0" layoutX="88.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SparkFit." textAlignment="CENTER" wrappingWidth="180.56365966796875">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+            <Line endX="-3.399993896484375" endY="301.0" layoutX="358.0" layoutY="112.0" startX="-3.399993896484375" startY="-23.600006103515625" stroke="#fff9f0" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

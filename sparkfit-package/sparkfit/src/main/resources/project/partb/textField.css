@@ -1,0 +1,9 @@
+/* For text field and password field*/
+
+.text-field {
+    -fx-text-fill: #fff9f0;
+}
+
+.password-field {
+    -fx-text-fill: #fff9f0;
+}

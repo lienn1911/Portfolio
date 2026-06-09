@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="Algorithm flow illustration">
+  <rect width="720" height="420" rx="34" fill="#fffaf0"/>
+  <g fill="none" stroke="#a7192f" stroke-width="3" opacity=".28">
+    <path d="M88 108h148v82H88z"/>
+    <path d="M288 70h148v82H288z"/>
+    <path d="M486 118h148v82H486z"/>
+    <path d="M290 270h148v82H290z"/>
+    <path d="M236 150c34 10 48 8 74-16"/>
+    <path d="M436 116c28 0 42 8 62 36"/>
+    <path d="M552 200c-32 52-72 82-126 96"/>
+    <path d="M286 310c-58-14-94-48-112-106"/>
+  </g>
+  <g fill="#a7192f">
+    <circle cx="162" cy="149" r="18"/>
+    <circle cx="362" cy="111" r="18"/>
+    <circle cx="560" cy="159" r="18"/>
+    <circle cx="364" cy="311" r="18"/>
+  </g>
+  <g font-family="DM Sans, Arial, sans-serif" font-weight="800" fill="#a7192f">
+    <text x="118" y="248" font-size="30">O(n)</text>
+    <text x="292" y="226" font-size="42">O(n log n)</text>
+    <text x="488" y="264" font-size="30">O(n²)</text>
+  </g>
+  <g fill="#a7192f" opacity=".11">
+    <rect x="72" y="304" width="138" height="50" rx="25"/>
+    <rect x="486" y="58" width="112" height="112" rx="32"/>
+    <circle cx="610" cy="320" r="46"/>
+  </g>
+</svg>

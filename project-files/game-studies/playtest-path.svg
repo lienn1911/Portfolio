@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-label="Playtest iteration path illustration">
+  <rect width="900" height="420" fill="#fff5e6"/>
+  <path d="M94 226 C184 80 314 324 440 170 C566 18 670 264 806 104" fill="none" stroke="#b01831" stroke-width="8" stroke-linecap="round" stroke-dasharray="1 24"/>
+  <g font-family="Verdana,Arial,sans-serif" font-weight="900">
+    <g transform="translate(74 194)">
+      <circle cx="0" cy="0" r="50" fill="#b01831"/>
+      <text x="0" y="9" text-anchor="middle" font-size="28" fill="#fff5e6">01</text>
+      <text x="0" y="86" text-anchor="middle" font-size="18" fill="#b01831">Rules</text>
+    </g>
+    <g transform="translate(318 260)">
+      <circle cx="0" cy="0" r="50" fill="#f8d7a8" stroke="#b01831" stroke-width="3"/>
+      <text x="0" y="9" text-anchor="middle" font-size="28" fill="#b01831">02</text>
+      <text x="0" y="86" text-anchor="middle" font-size="18" fill="#b01831">Playtest</text>
+    </g>
+    <g transform="translate(552 144)">
+      <circle cx="0" cy="0" r="50" fill="#2f9b70"/>
+      <text x="0" y="9" text-anchor="middle" font-size="28" fill="#fff5e6">03</text>
+      <text x="0" y="86" text-anchor="middle" font-size="18" fill="#b01831">Fix</text>
+    </g>
+    <g transform="translate(800 108)">
+      <circle cx="0" cy="0" r="50" fill="#b01831"/>
+      <text x="0" y="9" text-anchor="middle" font-size="28" fill="#fff5e6">04</text>
+      <text x="0" y="86" text-anchor="middle" font-size="18" fill="#b01831">Final</text>
+    </g>
+  </g>
+</svg>

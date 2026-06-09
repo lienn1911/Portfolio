@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="Game card system illustration">
+  <rect width="900" height="520" fill="#fff5e6"/>
+  <path d="M0 390 C142 298 260 442 410 330 C552 226 674 354 900 244 L900 520 L0 520Z" fill="#b01831" opacity=".12"/>
+  <g transform="translate(90 80)">
+    <rect x="0" y="18" width="178" height="250" rx="20" fill="#fffaf0" stroke="#b01831" stroke-width="3"/>
+    <rect x="22" y="42" width="134" height="74" rx="14" fill="#2f9b70" opacity=".85"/>
+    <text x="89" y="158" text-anchor="middle" font-family="Verdana,Arial,sans-serif" font-size="33" font-weight="900" fill="#b01831">COURSE</text>
+    <text x="89" y="210" text-anchor="middle" font-family="Verdana,Arial,sans-serif" font-size="22" font-weight="900" fill="#231513">SET</text>
+  </g>
+  <g transform="translate(312 58) rotate(-4 90 145)">
+    <rect x="0" y="18" width="178" height="250" rx="20" fill="#b01831" stroke="#231513" stroke-width="3"/>
+    <rect x="22" y="42" width="134" height="74" rx="14" fill="#fff5e6" opacity=".92"/>
+    <text x="89" y="158" text-anchor="middle" font-family="Verdana,Arial,sans-serif" font-size="42" font-weight="900" fill="#fff5e6">GPA</text>
+    <text x="89" y="212" text-anchor="middle" font-family="Verdana,Arial,sans-serif" font-size="34" font-weight="900" fill="#fff5e6">+0.5</text>
+  </g>
+  <g transform="translate(534 82) rotate(5 90 145)">
+    <rect x="0" y="18" width="178" height="250" rx="20" fill="#f8d7a8" stroke="#b01831" stroke-width="3"/>
+    <rect x="22" y="42" width="134" height="74" rx="14" fill="#b01831" opacity=".9"/>
+    <text x="89" y="158" text-anchor="middle" font-family="Verdana,Arial,sans-serif" font-size="33" font-weight="900" fill="#b01831">ACTION</text>
+    <text x="89" y="210" text-anchor="middle" font-family="Verdana,Arial,sans-serif" font-size="22" font-weight="900" fill="#231513">CARD</text>
+  </g>
+  <g transform="translate(326 355)">
+    <rect x="0" y="0" width="248" height="58" rx="29" fill="#fffaf0" stroke="#b01831" stroke-width="3"/>
+    <text x="124" y="38" text-anchor="middle" font-family="Verdana,Arial,sans-serif" font-size="22" font-weight="900" fill="#b01831">Draw 2 / Play 4</text>
+  </g>
+  <path d="M266 214 C300 246 330 260 370 250" fill="none" stroke="#b01831" stroke-width="5" stroke-linecap="round"/>
+  <path d="M506 250 C552 264 584 248 616 218" fill="none" stroke="#b01831" stroke-width="5" stroke-linecap="round"/>
+</svg>

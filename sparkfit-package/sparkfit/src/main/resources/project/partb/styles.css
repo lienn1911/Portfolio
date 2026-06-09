@@ -1,0 +1,120 @@
+
+/* Styling the menu buttons and menu items (hover, focus, selected etc) */
+
+
+.menu-button .arrow {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.menu-item {
+    -fx-font-family: "Rockwell";
+    -fx-font-size: 12px;
+    -fx-text-fill: #3C583E;
+    -fx-background-color: #FFF9F0;
+    -fx-padding: 10px;
+}
+
+.menu-item:hover {
+    -fx-background-color: #3C583E;
+    -fx-text-fill: #3C583E;
+}
+
+.menu-item:focused {
+    -fx-background-color: #3C583E; /* Background color when focused */
+    -fx-text-fill: white; /* Text color when focused */
+}
+
+
+/* Styling the date picker elements */
+.date-picker {
+    -fx-font-family: "Rockwell";
+    -fx-font-size: 14px;
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 5px;
+    -fx-border-color: #3C583E;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #5a845c;
+    -fx-background-radius: 0;
+}
+
+.date-picker .arrow-button:hover {
+    -fx-background-color: #3C583E;
+}
+
+.date-picker .cell {
+    -fx-background-color: white;
+}
+
+.date-picker .cell:hover {
+    -fx-background-color: #3C583E;
+    -fx-text-fill: white;
+}
+
+.date-picker .cell:focused {
+    -fx-background-color: #3C583E;
+    -fx-text-fill: white;
+}
+
+/* Styling the selected date */
+.date-picker .selected {
+    -fx-background-color: #3C583E;
+    -fx-text-fill: white;
+}
+
+.date-picker .selected:focused {
+    -fx-background-color: #3C583E;
+    -fx-text-fill: white;
+}
+
+/* Styling the popup header */
+.date-picker-popup .month-year-pane {
+    -fx-background-color: #3C583E;
+}
+
+.date-picker-popup .month-year-pane .label {
+    -fx-text-fill: white;
+}
+
+
+/* style the charts */
+
+.chart {
+    -fx-font-family: "Rockwell";
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+}
+
+.chart-title {
+    -fx-text-fill: #fff9f0; /* Title text color */
+    -fx-font-size: 14px; /* Title font size */
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+}
+
+.axis-label {
+    -fx-text-fill: #fff9f0; /* Axis label text color */
+    -fx-font-size: 12px; /* Axis label font size */
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+    -fx-padding: 10px;
+}
+
+.chart-legend-item {
+    -fx-text-fill: #fff9f0; /* Legend text color */
+}
+
+.chart .axis {
+    -fx-tick-label-fill: #fff9f0; /* Axis tick label color */
+    -fx-tick-mark-fill: #fff9f0; /* Axis tick mark color */
+}
+
+.chart .axis .axis-label {
+    -fx-text-fill: #fff9f0; /* Axis label text color */
+}
+
+

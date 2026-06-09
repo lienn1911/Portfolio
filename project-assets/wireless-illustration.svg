@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="Wireless security network illustration">
+  <rect width="720" height="420" rx="34" fill="#fffaf0"/>
+  <g fill="none" stroke="#a7192f" stroke-width="3" opacity=".32">
+    <rect x="302" y="152" width="116" height="116" rx="26"/>
+    <path d="M360 116c52 0 98 25 128 64"/>
+    <path d="M360 82c76 0 142 37 184 94"/>
+    <path d="M360 304c-52 0-98-25-128-64"/>
+    <path d="M360 338c-76 0-142-37-184-94"/>
+    <rect x="86" y="72" width="130" height="80" rx="18"/>
+    <rect x="504" y="78" width="130" height="80" rx="18"/>
+    <rect x="88" y="274" width="130" height="80" rx="18"/>
+    <rect x="502" y="270" width="130" height="80" rx="18"/>
+    <path d="M216 112l86 82M504 118l-86 78M218 314l84-88M502 310l-84-86"/>
+  </g>
+  <path d="M360 174l52 20v42c0 40-26 64-52 76-26-12-52-36-52-76v-42l52-20z" fill="#a7192f" opacity=".14"/>
+  <path d="M360 188l38 15v30c0 30-19 48-38 57-19-9-38-27-38-57v-30l38-15z" fill="none" stroke="#a7192f" stroke-width="4"/>
+  <g fill="#a7192f">
+    <circle cx="151" cy="112" r="14"/>
+    <circle cx="569" cy="118" r="14"/>
+    <circle cx="153" cy="314" r="14"/>
+    <circle cx="567" cy="310" r="14"/>
+  </g>
+  <g font-family="DM Sans, Arial, sans-serif" font-weight="800" fill="#a7192f">
+    <text x="315" y="66" font-size="32">SECURE NETWORK</text>
+    <text x="323" y="364" font-size="24">VLAN / BYOD / IDS</text>
+  </g>
+</svg>
