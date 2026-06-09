@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SparkFit Java App / Wong Li En</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="project-page.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="Portfolio.html">Wong Li En</a><nav class="nav"><a href="Portfolio.html#portfolio">Projects</a><a href="Portfolio.html#about">About</a><a href="Portfolio.html#contact">Contact</a></nav></header>
+<main class="page">
+  <section class="case-shell case-hero">
+    <div class="hero-copy reveal">
+      <div>
+        <span class="kicker">Advanced Programming / JavaFX App</span>
+        <h1 class="title">SparkFit <span>Fitness App</span></h1>
+        <p class="intro">A JavaFX desktop application for fitness goal setting, workout logging, nutrition tracking, user profiles, and progress visualisation.</p>
+        <div class="quick-tags"><span>Java</span><span>JavaFX</span><span>FXML</span><span>Maven</span><span>File Storage</span></div>
+      </div>
+      <div class="actions"><a class="btn primary" href="project-files/advanced-programming.docx" target="_blank">Open Report</a><a class="btn" href="project-files/sparkfit.zip" download>Download Source Code</a><a class="btn" href="Portfolio.html#portfolio">Back to Projects</a></div>
+      <div class="report-brief">
+        <article class="brief-card feature"><small>Main takeaway</small><b>Built a multi-screen Java fitness app.</b><p>SparkFit supports login, profile setup, goal tracking, workout logs, nutrition logs, and progress charts.</p></article>
+        <article class="brief-card"><small>What I want HR to see</small><b>Application flow, data handling, and UI structure.</b><p>The project shows how I connect interfaces, controllers, user input, and stored fitness data.</p></article>
+        <article class="brief-card"><small>Best viewing path</small><b>Explore the app summary first, then open the report.</b><p>The report contains detailed screenshots and implementation notes for each module.</p></article>
+      </div>
+      <div class="hero-meta"><div><b>Type</b><span>Java desktop application</span></div><div><b>Focus</b><span>Fitness tracking and user flow</span></div><div><b>Value</b><span>Object-oriented app development</span></div></div>
+    </div>
+  </section>
+
+  <section class="case-shell">
+    <div class="section-rule reveal"><h2>Live <span>Demo</span></h2><i class="round-mark">01</i></div>
+    <div class="demo-shell reveal">
+      <div class="demo-tabs" role="tablist" aria-label="SparkFit app screens">
+        <button class="demo-tab active" data-demo="login">Login</button>
+        <button class="demo-tab" data-demo="dashboard">Dashboard</button>
+        <button class="demo-tab" data-demo="profile">Profile</button>
+        <button class="demo-tab" data-demo="set-goals">Set Goals</button>
+        <button class="demo-tab" data-demo="view-goals">View Goals</button>
+        <button class="demo-tab" data-demo="workout">Workout</button>
+        <button class="demo-tab" data-demo="nutrition">Nutrition</button>
+        <button class="demo-tab" data-demo="progress">Progress</button>
+      </div>
+      <div class="demo-stage">
+        <div class="demo-screen">
+          <img id="sparkfit-demo-image" src="sparkfit-screens/image14.jpg" alt="SparkFit login screen">
+          <div class="demo-fallback" id="sparkfit-demo-fallback">SparkFit.</div>
+        </div>
+        <div class="demo-copy">
+          <small id="sparkfit-demo-kicker">01 / Login Flow</small>
+          <h3 id="sparkfit-demo-title">Account access with a simple entry screen.</h3>
+          <p id="sparkfit-demo-desc">Users can log in or switch to sign-up before entering the main fitness dashboard.</p>
+          <div class="demo-points" id="sparkfit-demo-points">
+            <span>Login and sign-up navigation</span>
+            <span>Clean JavaFX onboarding screen</span>
+            <span>Entry point before dashboard access</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-showcase reveal">
+      <div class="app-copy">
+        <div class="section-rule reveal"><h2>App <span>Overview</span></h2><i class="round-mark">02</i></div>
+        <div class="feature-strip">
+          <article class="feature-item"><small>01 / User flow</small><b>Login, sign-up, dashboard, and profile.</b><p>Users can create an account, enter profile details, and navigate through the app from a personalised dashboard.</p></article>
+          <article class="feature-item"><small>02 / Fitness goals</small><b>Set targets and track goal achievement.</b><p>The app supports calorie, step, weight, and sleep goals with deadline and achievement tracking.</p></article>
+          <article class="feature-item"><small>03 / Daily logs</small><b>Record workouts and nutrition information.</b><p>Workout and meal logging help users store exercise details, calories, macros, and history.</p></article>
+          <article class="feature-item"><small>04 / Visualisation</small><b>Turn fitness data into charts.</b><p>Progress views use JavaFX charts to summarise calories, steps, sleep, weight, and goal progress.</p></article>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-rule reveal"><h2>Technical <span>Highlights</span></h2><i class="round-mark">03</i></div>
+    <div class="bento">
+      <article class="tile reveal"><h3>Architecture</h3><p>The app is structured with JavaFX scenes, FXML layouts, and controller classes for each major user flow.</p><div class="pill-row"><span>JavaFX</span><span>FXML</span><span>Controllers</span></div><i class="tile-number">01</i></article>
+      <article class="tile reveal"><h3>Data handling</h3><p>User profiles, goals, workout logs, meal logs, and progress data are stored through local file-based persistence.</p><div class="pill-row"><span>File I/O</span><span>Data Models</span></div><i class="tile-number">02</i></article>
+      <article class="tile reveal"><h3>UI modules</h3><p>The app includes dedicated pages for login, sign-up, home, profile, fitness goals, workout logger, nutrition, and progress.</p><i class="tile-number">03</i></article>
+      <article class="tile reveal"><h3>Report value</h3><p>The report documents the implemented screens, feature behaviour, storage approach, and future improvements.</p><i class="tile-number">04</i></article>
+    </div>
+
+    <div class="section-rule reveal"><h2>Build <span>Flow</span></h2><i class="round-mark">04</i></div>
+    <div class="steps">
+      <div class="step reveal"><b>STEP 01</b><span>Design</span><p>Plan the fitness app modules and main user navigation.</p></div>
+      <div class="step reveal"><b>STEP 02</b><span>Develop</span><p>Build JavaFX screens with controllers and scene switching.</p></div>
+      <div class="step reveal"><b>STEP 03</b><span>Store</span><p>Save user, goal, workout, meal, and progress data locally.</p></div>
+      <div class="step reveal"><b>STEP 04</b><span>Present</span><p>Document the app features and remaining future improvements.</p></div>
+    </div>
+
+    <div class="project-rail-block reveal">
+      <div class="rail-head"><span>Explore more reports</span><small>Swipe sideways</small></div>
+      <div class="project-rail" aria-label="More project pages">
+        <a class="project-link" href="project-dsa.html"><span>Project report</span><b>Data Structures and Algorithms</b></a>
+        <a class="project-link" href="project-database.html"><span>Project report</span><b>Database System</b></a>
+        <a class="project-link" href="project-wireless-security.html"><span>Project report</span><b>Wireless Networks and Security</b></a>
+        <a class="project-link" href="project-computer-network-security.html"><span>Project report</span><b>Computer and Network Security</b></a>
+        <a class="project-link" href="project-digital-evidence.html"><span>Project report</span><b>Computer Crime and Digital Evidence</b></a>
+        <a class="project-link" href="project-operating-systems-networks.html"><span>Project report</span><b>Operating Systems and Computer Networks</b></a>
+        <a class="project-link" href="project-professional-practices-security.html"><span>Project report</span><b>Professional Practices and Information Security</b></a>
+        <a class="project-link" href="project-systems-fundamentals.html"><span>Project report</span><b>Systems Fundamentals</b></a>
+        <a class="project-link" href="project-theory-computation.html"><span>Project report</span><b>Theory of Computation</b></a>
+      </div>
+    </div>
+  </section>
+  <footer><span>Wong Li En / Project Page</span><span>SparkFit Java App</span></footer>
+</main>
+<script src="project-page.js"></script>
+</body>
+</html>
